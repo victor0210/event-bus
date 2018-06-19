@@ -1,10 +1,10 @@
 # Event-Bus
 
-##Initial
+## Initial
 ```javascript
 window.bus = new EventBus()
 ```
-##Usage
+## Usage
 
 ```javascript
 //bind event and get eventItem instance
