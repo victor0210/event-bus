@@ -9,11 +9,25 @@
 <script src="./dist/bundle.js"></script>
 
 <script>
-    bus.on('eventName', function(name) {
+    let b = bus.on('eventName', function(name) {
         console.log('I am callback!' + name)
     })
 
     bus.fire('eventName', 'event bus hello')
+
+    bus.remove('eventName', b)
+
+    bus.fire('eventName', 'event bus hello')
+
+    let bb = bus.on('eat', function() {
+      console.log('I am eating hanberger!')
+    })
+
+    bus.fire('eat')
+
+    bus.remove('eventName', bb)
+
+    bus.fire('eat')
 </script>
 </body>
 
