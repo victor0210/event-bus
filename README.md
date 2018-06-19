@@ -1,9 +1,11 @@
 # Event-Bus
+event proxy
 
 ## Initial
 ```javascript
 window.bus = new EventBus()
 ```
+
 ## Usage
 
 ```javascript
