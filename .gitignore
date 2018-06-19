@@ -10,7 +10,7 @@ yarn-error.log*
 /lib/
 
 # Editor directories and files
-.idea
+.idea/*
 .vscode
 *.suo
 *.ntvs*
